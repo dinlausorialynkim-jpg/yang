@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Signed In</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Page Background */
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-image: url("yan7.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background: #FFB6C1;
+            color: black;
+        }
+
+        /* Main Content */
+        .container {
+            flex: 1;
+            width: 100%;
+            min-height: 70vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: clamp(28px, 5vw, 45px);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        h3 {
+            font-size: clamp(20px, 3vw, 30px);
+            line-height: 1.6;
+            max-width: 800px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        p {
+            font-size: clamp(16px, 2.5vw, 20px);
+            font-weight: bold;
+            text-shadow: 1px 1px 4px black;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            nav {
+                gap: 10px;
+                padding: 15px 10px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+
+            .container {
+                min-height: 75vh;
+                padding: 30px 15px;
+            }
+
+            body {
+                background-attachment: scroll;
+            }
+        }
+
+        /* Mobile Phone */
+        @media (max-width: 480px) {
+            nav {
+                gap: 8px;
+                padding: 12px 8px;
+            }
+
+            nav a {
+                padding: 9px 12px;
+                font-size: 13px;
+                border-radius: 6px;
+            }
+
+            .container {
+                min-height: 70vh;
+                padding: 25px 15px;
+            }
+
+            h3 {
+                line-height: 1.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="Product.html">Product</a>
+        <a href="LoginForm.html">Log Out</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h3>
+            Welcome to our website! You can explore our
+            contact information and products.
+        </h3>
+
+        <p>Welcome!</p>
+    </main>
+
+</body>
+</html>

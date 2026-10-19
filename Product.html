@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SHOP K-FASHION</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url("yan7.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: #ff69b4;
+            color: black;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        nav {
+            background-color: #ffb6d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 15px 10px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff1493;
+            color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #ff1493;
+            background-color: rgba(255, 255, 255, 0.9);
+            width: fit-content;
+            max-width: 90%;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            border-radius: 15px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 30px 20px 50px;
+        }
+
+        .product {
+            background-color: rgba(255, 192, 203, 0.95);
+            padding: 18px;
+            text-align: center;
+            border: 2px solid #fff0f5;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(135, 206, 250, 0.8);
+            transition: transform 0.3s, box-shadow 0.3s;
+            min-width: 0;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(255, 20, 147, 0.35);
+        }
+
+        .product img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            color: #ff1493;
+            font-size: 18px;
+            margin: 15px 0 10px;
+            overflow-wrap: anywhere;
+        }
+
+        .price {
+            color: #d63384;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: black;
+            border: none;
+            padding: 11px 18px;
+            width: 100%;
+            max-width: 180px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+            color: white;
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Tablets */
+        @media (max-width: 1000px) {
+            .products {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 20px;
+            }
+
+            .product img {
+                height: 200px;
+            }
+        }
+
+        /* Small tablets and large phones */
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav {
+                gap: 5px;
+            }
+
+            nav a {
+                padding: 9px 10px;
+                font-size: 14px;
+                margin: 0;
+            }
+
+            .products {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 15px;
+                padding: 20px 12px 35px;
+            }
+
+            .product {
+                padding: 12px;
+            }
+
+            .product img {
+                height: 180px;
+            }
+
+            .product h2 {
+                font-size: 16px;
+            }
+
+            .price {
+                font-size: 18px;
+            }
+        }
+
+        /* Mobile phones */
+        @media (max-width: 400px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            nav a {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .products {
+                gap: 10px;
+                padding: 15px 8px 25px;
+            }
+
+            .product {
+                padding: 8px;
+            }
+
+            .product img {
+                height: 140px;
+            }
+
+            .product h2 {
+                font-size: 14px;
+            }
+
+            .price {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 12px;
+                padding: 9px 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>K-Fashion</h1>
+        <p>Welcome to my K-Fashion store!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Product.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login form.html">Login Form</a>
+    </nav>
+
+    <h2 class="section-title">Our Korean Fashion Collection</h2>
+
+    <main class="products">
+
+        <div class="product">
+            <img src="ria1.jpg" alt="K-Fashion Dress">
+            <h2>K-Fashion Dress</h2>
+            <p class="price">599</p>
+            <button type="button" onclick="addToCart('K-Fashion Dress', 599)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria2.jpg" alt="Korean Style T-shirt">
+            <h2>Korean Style T-Shirts</h2>
+            <p class="price">399</p>
+            <button type="button" onclick="addToCart('Korean Style T-Shirts', 399)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria3.jpg" alt="Korean Strap Skirt">
+            <h2>Korean Strap Skirt</h2>
+            <p class="price">450</p>
+            <button type="button" onclick="addToCart('Korean Strap Skirt', 450)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria4.jpg" alt="Korean Off-Shoulder Sweater">
+            <h2>Korean Off-Shoulder Sweater</h2>
+            <p class="price">490</p>
+            <button type="button" onclick="addToCart('Korean Off-Shoulder Sweater', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria7.jpg" alt="Korean Hoodie">
+            <h2>Korean Hoodie</h2>
+            <p class="price">560</p>
+            <button type="button" onclick="addToCart('Korean Hoodie', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria8.jpg" alt="Korean Fashion Outfit">
+            <h2>Korean Fashion Outfit</h2>
+            <p class="price">899</p>
+            <button type="button" onclick="addToCart('Korean Fashion Outfit', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria9.jpg" alt="Korean Casual Wear">
+            <h2>Korean Casual Wear</h2>
+            <p class="price">580</p>
+            <button type="button" onclick="addToCart('Korean Casual Wear', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria10.jpg" alt="Korean Style Clothing">
+            <h2>Korean Style Clothing</h2>
+            <p class="price">900</p>
+            <button type="button" onclick="addToCart('Korean Style Clothing', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria11.jpg" alt="Korean Trendy Outfit">
+            <h2>Korean Trendy Outfit</h2>
+            <p class="price">800</p>
+            <button type="button" onclick="addToCart('Korean Trendy Outfit', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria12.jpg" alt="Korean Fashion Top">
+            <h2>Korean Fashion Top</h2>
+            <p class="price">620</p>
+            <button type="button" onclick="addToCart('Korean Fashion Top', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria13.jpg" alt="Korean Casual Outfit">
+            <h2>Korean Casual Outfit</h2>
+            <p class="price">599</p>
+            <button type="button" onclick="addToCart('Korean Casual Outfit', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria14.jpg" alt="Korean Fashion Dress">
+            <h2>Korean Fashion Dress</h2>
+            <p class="price">899</p>
+            <button type="button" onclick="addToCart('Korean Fashion Dress', 699)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="ria15.jpg" alt="Korean Style Outfit">
+            <h2>Korean Style Outfit</h2>
+            <p class="price">999</p>
+            <button type="button" onclick="addToCart('Korean Style Outfit', 699)">Add to Cart</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 K-Fashion. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName, price) {
+            alert(
+                productName + " - ?" + price +
+                " has been selected!"
+            );
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - SHOP K-FASHION</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            color: white;
+            background-image:
+                linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("yan7.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 20px;
+            background: linear-gradient(
+                90deg, #ffb6c1, #ff69b4, #f9a8d4
+            );
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #ff1493;
+            transform: translateY(-3px);
+        }
+
+        /* About Section */
+        .container {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-box {
+            width: 90%;
+            max-width: 850px;
+            padding: 40px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.65);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-box h1 {
+            color: #ffb6c1;
+            font-size: 42px;
+            margin-bottom: 25px;
+        }
+
+        .about-box p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .highlight {
+            color: #ffb6c1;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(
+                90deg, #ffb6c1, #ff69b4, #f9a8d4
+            );
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                gap: 8px;
+                padding: 15px 10px;
+            }
+
+            nav a {
+                padding: 10px 14px;
+                font-size: 14px;
+            }
+
+            .container {
+                min-height: 70vh;
+                padding: 30px 12px;
+            }
+
+            .about-box {
+                width: 100%;
+                padding: 25px 18px;
+            }
+
+            .about-box h1 {
+                font-size: 30px;
+            }
+
+            .about-box p {
+                font-size: 16px;
+                line-height: 1.7;
+            }
+
+            footer p {
+                font-size: 14px;
+            }
+
+            body {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="product.html">Product</a>
+        <a href="LoginForm.html">Login</a>
+    </nav>
+
+    <!-- About Content -->
+    <main class="container">
+        <section class="about-box">
+
+            <h1>About K-FASHION</h1>
+
+            <p>
+                Welcome to <span class="highlight">K-FASHION</span>!
+                Discover trendy outfits that are stylish,
+                comfortable, and perfect for everyday wear.
+            </p>
+
+            <p>
+                K-FASHION offers fashionable clothing inspired
+                by popular Korean trends. Our collection features
+                modern outfits, cute designs, and stylish looks
+                for different occasions.
+            </p>
+
+            <p>
+                Our goal is to help you explore fashion and find
+                outfits that make you feel comfortable and confident.
+                Discover your style with K-FASHION!
+            </p>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Miss. RIALYN KIM | K-FASHION</p>
+    </footer>
+
+</body>
+</html>
